@@ -70,11 +70,11 @@ if exists('g:gruvbox_contrast')
 endif
 
 if !exists('g:gruvbox_contrast_dark')
-  let g:gruvbox_contrast_dark='medium'
+  let g:gruvbox_contrast_dark='soft'
 endif
 
 if !exists('g:gruvbox_contrast_light')
-  let g:gruvbox_contrast_light='medium'
+  let g:gruvbox_contrast_light='soft'
 endif
 
 let s:is_dark=(&background == 'dark')
@@ -300,7 +300,7 @@ if exists('g:gruvbox_color_column')
   let s:color_column = get(s:gb, g:gruvbox_color_column)
 endif
 
-let s:vert_split = s:bg2
+let s:vert_split = s:bg0
 if exists('g:gruvbox_vert_split')
   let s:vert_split = get(s:gb, g:gruvbox_vert_split)
 endif
@@ -483,8 +483,8 @@ call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:bg4, s:bg0, s:bold . s:inverse)
-call s:HL('StatusLineNC', s:bg2, s:fg4, s:bold . s:inverse)
+call s:HL('StatusLine',   s:bg0, s:bg4, s:bold . s:inverse)
+call s:HL('StatusLineNC', s:bg0, s:bg2, s:bold . s:inverse)
 
 " The column separating vertically split windows
 call s:HL('VertSplit', s:fg4, s:vert_split)
@@ -501,9 +501,9 @@ hi! link Title GruvboxGreenBold
 " Error messages on the command line
 call s:HL('ErrorMsg',   s:bg0, s:red, s:bold)
 " More prompt: -- More --
-hi! link MoreMsg GruvboxYellowBold
+hi! link MoreMsg GruvboxGray
 " Current mode message: -- INSERT --
-hi! link ModeMsg GruvboxYellowBold
+hi! link ModeMsg GruvboxGray
 " 'Press enter' prompt and yes/no questions
 hi! link Question GruvboxOrangeBold
 " Warning messages
@@ -513,10 +513,13 @@ hi! link WarningMsg GruvboxRedBold
 " Gutter: {{{
 
 " Line number for :number and :# commands
-call s:HL('LineNr', s:bg4, s:number_column)
+call s:HL('LineNr', s:bg2, s:number_column)
+
+" End of buffer signs
+call s:HL('EndOfBuffer', s:bg2, s:number_column)
 
 " Column where signs are displayed
-call s:HL('SignColumn', s:none, s:sign_column)
+call s:HL('SignColumn', s:sign_column, s:none)
 
 " Line used for closed folds
 call s:HL('Folded', s:gray, s:bg1, s:italic)
@@ -722,10 +725,10 @@ let g:niji_light_colours = g:rbpt_colorpairs
 "}}}
 " GitGutter: {{{
 
-hi! link GitGutterAdd GruvboxGreenSign
-hi! link GitGutterChange GruvboxAquaSign
-hi! link GitGutterDelete GruvboxRedSign
-hi! link GitGutterChangeDelete GruvboxAquaSign
+hi GitGutterAdd ctermbg=236 ctermfg=245
+hi GitGutterChange ctermbg=236 ctermfg=245
+hi GitGutterDelete ctermbg=236 ctermfg=245
+hi GitGutterChangeDelete ctermbg=236 ctermfg=245
 
 " }}}
 " GitCommit: "{{{

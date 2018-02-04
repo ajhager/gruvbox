@@ -869,11 +869,11 @@ hi! link netrwVersion GruvboxAqua
 " }}}
 " NERDTree: {{{
 
-hi! link NERDTreeDir GruvboxBg3
+hi! link NERDTreeDir GruvboxBg4
 hi! link NERDTreeDirSlash GruvboxBg2
 
-hi! link NERDTreeOpenable GruvboxBg4
-hi! link NERDTreeClosable GruvboxGray
+hi! link NERDTreeOpenable GruvboxBg2
+hi! link NERDTreeClosable GruvboxBg2
 
 hi! link NERDTreeFile GruvboxFg3
 hi! link NERDTreeExecFile GruvboxGreen

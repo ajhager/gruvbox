@@ -855,31 +855,31 @@ hi! link DirvishArg GruvboxYellow
 " }}}
 " Netrw: {{{
 
-hi! link netrwDir GruvboxAqua
-hi! link netrwClassify GruvboxAqua
+hi! link netrwDir GruvboxBg3
+hi! link netrwClassify GruvboxBg2
 hi! link netrwLink GruvboxGray
 hi! link netrwSymLink GruvboxFg1
-hi! link netrwExe GruvboxYellow
+hi! link netrwExe GruvboxGreen
 hi! link netrwComment GruvboxGray
 hi! link netrwList GruvboxBlue
-hi! link netrwHelpCmd GruvboxAqua
+hi! link netrwHelpCmd GruvboxBlue
 hi! link netrwCmdSep GruvboxFg3
-hi! link netrwVersion GruvboxGreen
+hi! link netrwVersion GruvboxAqua
 
 " }}}
 " NERDTree: {{{
 
-hi! link NERDTreeDir GruvboxAqua
-hi! link NERDTreeDirSlash GruvboxAqua
+hi! link NERDTreeDir GruvboxBg3
+hi! link NERDTreeDirSlash GruvboxBg2
 
-hi! link NERDTreeOpenable GruvboxOrange
-hi! link NERDTreeClosable GruvboxOrange
+hi! link NERDTreeOpenable GruvboxBg4
+hi! link NERDTreeClosable GruvboxGray
 
-hi! link NERDTreeFile GruvboxFg1
-hi! link NERDTreeExecFile GruvboxYellow
+hi! link NERDTreeFile GruvboxFg3
+hi! link NERDTreeExecFile GruvboxGreen
 
 hi! link NERDTreeUp GruvboxGray
-hi! link NERDTreeCWD GruvboxGreen
+hi! link NERDTreeCWD GruvboxRed
 hi! link NERDTreeHelp GruvboxFg1
 
 hi! link NERDTreeToggleOn GruvboxGreen

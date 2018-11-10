@@ -575,7 +575,7 @@ else
   call s:HL('Special', s:orange, s:bg1, s:italicize_strings)
 endif
 
-call s:HL('Comment', s:gray, s:none, s:italicize_comments)
+call s:HL('Comment', s:bg4, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
 
@@ -999,6 +999,16 @@ hi! link clojureQuote GruvboxYellow
 hi! link clojureUnquote GruvboxYellow
 
 " }}}
+" Gerbil: {{{
+
+hi! link gerbilKeyword GruvboxBlue
+hi! link gerbilSpecialSyntax GruvboxOrange
+hi! link gerbilFunction GruvboxBlue
+hi! link gerbilCharacter GruvboxGreen
+hi! link gerbilParentheses GruvboxGray
+hi! link gerbilQuote GruvboxFg2
+hi! link gerbilQuasiquote GruvboxFg2
+
 " C: {{{
 
 hi! link cOperator GruvboxPurple
@@ -1376,6 +1386,14 @@ hi! link jsonKeyword GruvboxGreen
 hi! link jsonQuote GruvboxGreen
 hi! link jsonBraces GruvboxFg1
 hi! link jsonString GruvboxFg1
+
+" }}}
+" Zig: {{{
+
+hi! link zigBuiltinFn GruvboxBlue
+hi! link zigCommentLineDoc GruvboxGray
+hi! link zigStorage GruvboxRed
+hi! link zigKeyword GruvboxOrange
 
 " }}}
 

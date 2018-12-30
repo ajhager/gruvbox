@@ -1396,6 +1396,29 @@ hi! link zigStorage GruvboxRed
 hi! link zigKeyword GruvboxOrange
 
 " }}}
+" Agda: {{{
+
+hi! link agdaNumber           Number
+hi! link agdaString           String
+hi! link agdaConstructor      Constant
+hi! link agdaCharCode         SpecialChar
+hi! link agdaCharCodeErr      Error
+hi! link agdaHole             WarningMsg
+hi! link agdaDubious          WarningMsg
+hi! link agdaKeywords         GruvboxRed
+hi! link agdaFunction         Macro
+hi! link agdaOperator         Operator
+hi! link agdaInfixConstructor Operator
+hi! link agdaInfixFunction    Operator
+hi! link agdaLineComment      Comment
+hi! link agdaBlockComment     Comment
+hi! link agdaPragma           Comment
+hi! link agdaTODO             Todo
+hi! link agdaFIXME            Todo
+hi! link agdaXXX              Todo
+
+" }}}
+
 
 
 " Functions -------------------------------------------------------------------

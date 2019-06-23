@@ -1418,8 +1418,22 @@ hi! link agdaFIXME            Todo
 hi! link agdaXXX              Todo
 
 " }}}
+" Rust: {{{
 
+" Default highlighting {{{1
+hi! link rustOperator      GruvboxGray
+hi! link rustModPath       GruvboxYellow
+hi! link rustModPathSep    GruvboxGray
+hi! link rustFuncCall      GruvboxBlue
+hi! link rustConstant      GruvboxYellow
+hi! link rustSelf          GruvboxYellow
+hi link rustAttribute      GruvboxAqua
+hi link rustDerive         GruvboxAqua
+hi link rustAssert         GruvboxAqua
+hi link rustPanic          GruvboxAqua
+hi link rustMacro          GruvboxAqua
 
+" }}}
 
 " Functions -------------------------------------------------------------------
 " Search Highlighting Cursor {{{
